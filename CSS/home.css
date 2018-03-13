@@ -1,135 +1,8 @@
-/*	background: */
-
-
-/* ----------- iPhone 4 and 4S ----------- */
-
-/* Portrait and Landscape */
-@media only screen 
-  and (min-device-width: 320px) 
-  and (max-device-width: 480px)
-  and (-webkit-min-device-pixel-ratio: 2) {
- background-attachment:scroll;
-}
-
-/* Portrait */
-@media only screen 
-  and (min-device-width: 320px) 
-  and (max-device-width: 480px)
-  and (-webkit-min-device-pixel-ratio: 2)
-  and (orientation: portrait) {
-  	 background-attachment:scroll;
-}
-
-/* Landscape */
-@media only screen 
-  and (min-device-width: 320px) 
-  and (max-device-width: 480px)
-  and (-webkit-min-device-pixel-ratio: 2)
-  and (orientation: landscape) {
- background-attachment:scroll;
-}
-
-/* ----------- iPhone 5 and 5S ----------- */
-
-/* Portrait and Landscape */
-@media only screen 
-  and (min-device-width: 320px) 
-  and (max-device-width: 568px)
-  and (-webkit-min-device-pixel-ratio: 2) {
- background-attachment:scroll;
-}
-
-/* Portrait */
-@media only screen 
-  and (min-device-width: 320px) 
-  and (max-device-width: 568px)
-  and (-webkit-min-device-pixel-ratio: 2)
-  and (orientation: portrait) {
-  	 background-attachment:scroll;
-}
-
-/* Landscape */
-@media only screen 
-  and (min-device-width: 320px) 
-  and (max-device-width: 568px)
-  and (-webkit-min-device-pixel-ratio: 2)
-  and (orientation: landscape) {
- background-attachment:scroll;
-}
-
-/* ----------- iPhone 6 ----------- */
-
-/* Portrait and Landscape */
-@media only screen 
-  and (min-device-width: 375px) 
-  and (max-device-width: 667px) 
-  and (-webkit-min-device-pixel-ratio: 2) { 
- background-attachment:scroll;
-}
-
-/* Portrait */
-@media only screen 
-  and (min-device-width: 375px) 
-  and (max-device-width: 667px) 
-  and (-webkit-min-device-pixel-ratio: 2)
-  and (orientation: portrait) { 
- background-attachment:scroll;
-}
-
-/* Landscape */
-@media only screen 
-  and (min-device-width: 375px) 
-  and (max-device-width: 667px) 
-  and (-webkit-min-device-pixel-ratio: 2)
-  and (orientation: landscape) { 
- background-attachment:scroll;
-}
-
-/* ----------- iPhone 6+ ----------- */
-
-/* Portrait and Landscape */
-@media only screen 
-  and (min-device-width: 414px) 
-  and (max-device-width: 736px) 
-  and (-webkit-min-device-pixel-ratio: 3) { 
- background-attachment:scroll;
-}
-
-/* Portrait */
-@media only screen 
-  and (min-device-width: 414px) 
-  and (max-device-width: 736px) 
-  and (-webkit-min-device-pixel-ratio: 3)
-  and (orientation: portrait) { 
- background-attachment:scroll;
-}
-
-/* Landscape */
-@media only screen 
-  and (min-device-width: 414px) 
-  and (max-device-width: 736px) 
-  and (-webkit-min-device-pixel-ratio: 3)
-  and (orientation: landscape) { 
- background-attachment:scroll;
-}
-
-@media only screen 
-and (min-device-width : 375px) 
-and (max-device-width : 667px) 
-{
- background-attachment:scroll;
-}
 
 
 body { 
 
-background: url(../images/background.png) no-repeat center center fixed;
-
-background-size: 100%;
--webkit-background-size: cover;
--moz-background-size: cover;
--o-background-size: cover;
-
+background-color: #1b1f21
 
 }
 
@@ -138,23 +11,64 @@ background-size: 100%;
 @font-face {
 font-family: "PressStart2P";
 src: url('../pressstart2p.ttf')  format('truetype'),
-	 url('../pressstart2p.woff') format('woff'), 
+   url('../pressstart2p.woff') format('woff'), 
  
 }
 */
 
-
-p.mimi
+#content
 {
-font-family: 'Press Start 2P', cursive;
 position: absolute;
-font-size: 25px;
-top: 40%;
-left: 25%;
-color: rgb(201, 182, 167);
+top: 45%;
+left: 30%;
 }
 
+#title {
+position: relative;
+font-family: "Trebuchet MS", Helvetica, sans-serif;
+font-weight: 100;
+font-size: 15px;
+color: #ffffff;
+text-align: center; 
 
+}
+
+#title p
+{
+  color: grey;
+  line-height: 0px;
+  min-width: 150px;
+}
+
+#social {
+  text-align: center;
+  position: relative;
+}
+
+.fa {
+  padding: 3px;
+  width: 20px;
+  font-size: 20px;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 20%;
+} 
+
+#social .fa-linkedin {
+  font-size: 20px;
+  background: #007bb5;
+  color: white;
+}
+
+#social .fa-github {
+  font-size: 22px;
+  color: #d6b1d2;
+}
+
+#social .fa-envelope-o {
+  font-size: 22px;
+  color: white;
+}
 
 
 
