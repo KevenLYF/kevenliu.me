@@ -1,12 +1,14 @@
 body { 
-background-color: #1b1f21
+background-color: #1b1f21;
+/*rgb(27, 31, 33)*/
 }
 
 #content
 {
 position: absolute;
-top: 45%;
-left: 30%;
+top: 55%;
+left: 25%;
+width: 300px;
 }
 
 #title {
@@ -16,14 +18,22 @@ font-weight: 100;
 font-size: 15px;
 color: #ffffff;
 text-align: center; 
+}
 
+#title h1 {
+line-height: 10px;
+}
+
+#title p1
+{
+  color: grey;
+  line-height: 0px;
 }
 
 #title p
 {
   color: grey;
   line-height: 0px;
-  min-width: 150px;
 }
 
 #social {
@@ -34,31 +44,143 @@ text-align: center;
 .fa {
   padding: 3px;
   width: 20px;
-  font-size: 20px;
   text-decoration: none;
   margin: 5px 2px;
-  border-radius: 20%;
 } 
 
 #social .fa-linkedin {
-  font-size: 20px;
+  position: relative;
+  bottom: 1.5px;
+  border-radius: 20%;
+  font-size: 19px;
   background: #007bb5;
   color: white;
 }
 
 #social .fa-github {
-  font-size: 22px;
+  font-size: 25px;
   color: #d6b1d2;
 }
 
 #social .fa-envelope-o {
-  font-size: 22px;
+  font-size: 23px;
   color: white;
 }
 
+#social .fa-file-text-o {
+  font-size: 22px;
+  color: white;
+  padding-right: 5px;
+}
 
+.envelope-hover:hover {
+  animation: fa-spin 1.5s;
+}
 
+.github-hover:hover {
+    transform:scale(1.5);
+}
 
+.linkedin-hover:hover {
+    /* Start the shake animation and make the animation last for 0.5 seconds */
+    animation: shake 0.5s; 
+}
 
+.resume-hover:hover {
+  animation: fa-spin 1.5s;
+}
 
+@-webkit-keyframes fa-spin {
+  0% 
+  {
+    -webkit-transform:rotate(0deg);
+    transform:rotate(0deg)
+  }
+  100%
+  {
+    -webkit-transform:rotate(359deg);
+    transform:rotate(359deg)
+  }
+}
+@keyframes fa-spin{
+  0%
+  {
+    -webkit-transform:rotate(0deg);
+    transform:rotate(0deg)
+  }
+  100%
+  {
+    -webkit-transform:rotate(359deg);
+    transform:rotate(359deg)
+  }
+}
 
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+} 
+
+#portfolio {
+position: absolute;
+top: 20%;
+left: 55%;
+}
+
+#portfolio div {
+  float: left;
+}
+
+.project {
+position: relative;
+font-family: "Trebuchet MS", Helvetica, sans-serif;
+font-weight: 100;
+color: #ffffff;
+text-align: left; 
+}
+
+.ML {
+font-size: 18px; 
+cursor: pointer;
+color: grey;
+}
+
+.ML:hover {
+color:#d1d1d1;
+}
+
+.sidenav {
+height: 100%;
+width: 0;
+position: fixed;
+z-index: 1;
+top: 0;
+right: 0;
+background-color: rgb(255,255,255);
+overflow-x: hidden;
+transition: 1s;
+padding-top: 60px;
+}
+
+.sidenav a {
+padding: 8px 8px 8px 32px;
+text-decoration: none;
+font-size: 25px;
+color: #818181;
+display: block;
+transition: 0.3s;
+}
+
+.sidenav .closebtn {
+position: absolute;
+top: 0;
+font-size: 36px;
+}
