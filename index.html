@@ -11,17 +11,103 @@
 <body>
 
 
-<div id="mySidenav" class="sidenav">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  <a href="#">About</a>
-  <a href="#">Services</a>
-  <a href="#">Clients</a>
-  <a href="#">Contact</a>
-</div>
+<div id="MLSidenav" class="sidenav">
+	<a href="javascript:void(0)" class="closebtn" onclick="closeNav('MLSidenav')">&times;</a>
+	<h1>Machine Learning: Learn Music</h1>
+	<p>In this project, our team built a neural network on myRIO logic board by using labVIEW. The main feature of this neural network is to learn music (recoginize tones).
+	By listening to the tones or chords, the program will tell which tone or chord is being played. 
+	<br>
+	</p>
+
+	<img src=file/ml1.jpg alt="myRIO borad" width="300" height="300" class="myRIO">
+
+	<p > The recognition requires two modes: a "training" mode and a "inference" mode. In "training" mode, we feed the dataset into the feedback network, and it will update it's parameters in the backpropagation algorithm which we wrote in labVIEW. The training process will finish once it's output posibility is at the closet point to "1". In "inference" mode, we will play tones and chords, and the program will tell us what it just heard. The accuracy of our program exceed 95%. 
+	<br>
+	<br>
+	Below is the overview of our program, and if interested, you can download our report.
+	<br>
+	<br>
+  </p>
+
+   <img src=file/ml-overview.png alt="overview" width="500" height="200" class="myRIO">
+
+   <p>    
+   	<a href="file/ML_report.pdf" class="report">Download report</a> 
+   	 <br>
+   	 <br>
+   	 <br>
+   	 <br>
+	&nbsp;
+   </p>
+
+ </div>
+
+<div id="TASidenav" class="sidenav">
+	<a href="javascript:void(0)" class="closebtn" onclick="closeNav('TASidenav')">&times;</a>
+
+	<h1>Cross Platform TA Management System</h1>
+
+	<p class="note"> 
+	Note: as mentioned by my teammate, the new McGill MyFuture website may "copied" my website design :)   
+	<a href="https://caps.myfuture.mcgill.ca/students/?signin_tab=0&PHPSESSID=2a77fc742618417627b985daec06ec5c" class="mfLink">link to myFuture</a> 
+
+	</p>
+
+	<p>
+	<br>   
+	<br>
+	We developed a TA management System in 3 platfroms: a Java program in PC, an Android app and a website which is written in HTML, CSS and PHP. The system enables students to apply for a TA position, or a professor to review all the TA applications.
+	</p>
+	<img src=file/TA1.png alt="android" width="184" height="334" class="android">
+	<img src=file/TA2.png alt="android" width="184" height="334">
+	<img src=file/TA3.png alt="android" width="184" height="334">
+	<p>
+	<br>
+	The system was developed under standard software development process. First we used Umple modeling tool to model the system and then we used git to collaborate everyone's work. The development process was also tracked by using Gantt Chart. After the developemnt was done, we performed Unit Test and Integration Test by using respective frameworks (JUnit, PHP Unit, XDebug). The CI and building process was monitored by using Travis CI.
+	</p>
+
+     <img src=file/TA5.png alt="android" width="576" height="330" class="TAwebsite">
+     <img src=file/TA6.png alt="android" class="TAwebsite">
+     <img src=file/TA4.png alt="android" width="576" height="330" class="TAwebsite">
+
+	<p> 	
+	If interesed, you can go to my github and check it out.
+	<br>
+	<br>
+	<br>
+	<br>
+	&nbsp;
+	</p>
+
+ </div>
+
+ <div id="radioSidenav" class="sidenav"> 
+ 	<a href="javascript:void(0)" class="closebtn" onclick="closeNav('radioSidenav')">&times;</a>
+ 	<h1>AM Reciever</h1>
+ 		<p>The AM reciever, which commonly known as radio is a device that takes baseband frequency as input and output audio information. We made a radio station from the most original materials: wires, resistors, capacitors, BJTs and MOSFETs. The development process is caculation - simulation - assembling. We used knowledge learned from microelectronic classes to calculate parameters, and simulated the whole design in PSPICE.
+ 		</p>
+
+ 		<img src=file/radio3.jpg alt="radio" class="radioPic" width="571" height="365"> 
+ 		<img src=file/radio1.jpg alt="radio" class="radioPic" width="571" height="428">
+ 		<img src=file/radio2.jpg alt="radio" class="radioPic" width="571" height="428">
+
+ 		<p> If interesed, you can download our report.
+ 			<a href="file/Radio_report.pdf" class="report">Download report</a> 
+	   		<br>
+	   	 	<br>
+	   	 	<br>
+	   	 	<br>
+	   	 		&nbsp;
+ 		</p>
+
+
+ </div>
 
 <div id="page">
 	<div id="content">
 		<div id="title">
+			<img src="file/portrait_circle.png" alt="photo" width="250" height="250">
+			
 			<h1>Keven Liu</h1>
 			<p1>McGill University<p1>
 			<p>Software Engineering Student</p>
@@ -41,19 +127,22 @@
 		<div id="project"> 
 			<h2>Projects 
 				<span class="fa fa-search"></span>
-				<input type="text" id="myInput" onkeyup="myFunction()" placeholder="search...">
+				<input type="text" id="myInput" onkeyup="search()" placeholder="search...">
 			</h2>
-			<p class=ML onclick="openNav()">Machine Learning: Learn Music</p>
-			<p class=ML onclick="openNav()">Cross Platform TA Management Systen</p>
-			<p class=ML onclick="openNav()">AM Reciever (trivial name: Radio)</p>
-			<p class=ML onclick="openNav()">Enigma Encryption Machine</p>
-			<p class=ML onclick="openNav()">LEGO EV3 MindStorm Robot</p>
+			<p class=project-content onclick="openNav('MLSidenav')">Machine Learning: Learn Music</p>
+			<p class=project-content  onclick="openNav('TASidenav')">Cross Platform TA Management System</p>
+			<p class=project-content  onclick="openNav('radioSidenav')">AM Reciever (trivial name: Radio)</p>
+			<p class=project-content  onclick="openNav()">Enigma Encryption Machine</p>
+			<p class=project-content  onclick="openNav()">LEGO EV3 MindStorm Robot</p>
 		</div>
 	</div>
 
+	<div id="interest">
+		<h2> Interest </h2>
+
+	</div>
+
 </div>
-
-
 
 </body>
 </html>

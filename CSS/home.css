@@ -6,7 +6,7 @@ background-color: #1b1f21;
 #content
 {
 position: absolute;
-top: 55%;
+top: 20%;
 left: 25%;
 width: 300px;
 }
@@ -18,6 +18,10 @@ font-weight: 100;
 font-size: 15px;
 color: #ffffff;
 text-align: center; 
+}
+
+#title img {
+margin-bottom: 2em;
 }
 
 #title h1 {
@@ -141,9 +145,6 @@ top: 20%;
 left: 55%;
 }
 
-#portfolio div {
-  float: left;
-}
 
 #project {
 position: relative;
@@ -153,15 +154,26 @@ color: #ffffff;
 text-align: left; 
 }
 
-.ML {
+.project-content  {
 font-size: 15px; 
 cursor: pointer;
 color: grey;
 }
 
-.ML:hover {
+.project-content:hover {
 color:#d1d1d1;
 }
+
+#interest {
+position: absolute;
+top: 50%;
+left: 55%;
+font-family: "Trebuchet MS", Helvetica, sans-serif;
+font-weight: 100;
+color: #ffffff;
+text-align: left; 
+}
+
 
 .sidenav {
 height: 100%;
@@ -170,7 +182,7 @@ position: fixed;
 z-index: 1;
 top: 0;
 right: 0;
-background-color: rgb(255,255,255);
+background-color: rgba(63, 63, 63, 0.9);
 overflow-x: hidden;
 transition: 0.7s;
 padding-top: 60px;
@@ -202,4 +214,125 @@ font-size: 36px;
 
 input#myInput, textarea{
   color: #8e8e8e;
+}
+
+#MLSidenav h1 {
+color: #d1d1d1;
+text-align: center;
+font-family: "Trebuchet MS", Helvetica, sans-serif;
+font-weight: 100;
+}
+
+#MLSidenav p {
+font-size: 15px;
+color: #d1d1d1;
+text-align: justify;
+padding-left: 10%;
+padding-right: 10%;
+font-family: "Trebuchet MS", Helvetica, sans-serif;
+font-weight: 100;
+}
+
+#MLSidenav .report {
+font-size: 15px;
+color: #d1d1d1;
+padding-left: 10%;
+display: inline;
+text-decoration: underline;
+margin: 0px;
+}
+
+
+#MLSidenav a.report:visited {
+  color:#92bbfc;
+}
+
+.myRIO {
+display: block;
+margin-left: auto;
+margin-right: auto;
+}
+
+#TASidenav h1 {
+color: #d1d1d1;
+text-align: center;
+font-family: "Trebuchet MS", Helvetica, sans-serif;
+font-weight: 100;
+}
+
+#TASidenav p {
+font-size: 15px;
+color: #d1d1d1;
+text-align: justify;
+padding-left: 10%;
+padding-right: 10%;
+font-family: "Trebuchet MS", Helvetica, sans-serif;
+font-weight: 100;
+}
+
+#TASidenav .mfLink {
+font-size: 12px;
+color: #d1d1d1;
+display: inline;
+text-decoration: underline;
+float: right;
+}
+
+.android {
+padding-left: 13%;
+margin-left: auto;
+margin-right: auto;
+}
+
+.TAwebsite {
+display: block;
+margin-left: auto;
+margin-right: auto;
+margin-bottom: 2em;
+}
+
+#TASidenav .note {
+font-size: 12px;
+color: #d1d1d1;
+text-align: justify;
+padding-left: 10%;
+padding-right: 10%;
+font-family: "Trebuchet MS", Helvetica, sans-serif;
+font-weight: 100;
+}
+
+#radioSidenav h1 {
+color: #d1d1d1;
+text-align: center;
+font-family: "Trebuchet MS", Helvetica, sans-serif;
+font-weight: 100;
+}
+
+#radioSidenav p {
+font-size: 15px;
+color: #d1d1d1;
+text-align: justify;
+padding-left: 10%;
+padding-right: 10%;
+font-family: "Trebuchet MS", Helvetica, sans-serif;
+font-weight: 100;
+}
+
+.radioPic {
+display: block;
+margin-left: auto;
+margin-right: auto;
+margin-bottom: 2em;
+}
+
+#radioSidenav .report {
+font-size: 15px;
+color: #d1d1d1;
+display: inline;
+text-decoration: underline;
+}
+
+
+#radioSidenav a.report:visited {
+  color:#92bbfc;
 }

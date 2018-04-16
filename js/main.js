@@ -1,14 +1,14 @@
-function openNav() {
-    document.getElementById("mySidenav").style.width = "50%";
+function openNav(mySidenav) {
+    document.getElementById(mySidenav).style.width = "50%";
     document.getElementById("page").style = "transition: 0.7s;filter:blur(2px);"
 }
 
-function closeNav() {
-    document.getElementById("mySidenav").style.width = "0";
+function closeNav(mySidenav) {
+    document.getElementById(mySidenav).style.width = "0";
     document.getElementById("page").style = "transition: 0.7s;filter:blur(0px);"
 }
 
-function myFunction() {
+function search() {
   var input, filter, project, p, i;
   input = document.getElementById("myInput");
   filter = input.value.toUpperCase();
