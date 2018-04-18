@@ -1,5 +1,5 @@
 function openNav(mySidenav) {
-    document.getElementById(mySidenav).style.width = "50%";
+    document.getElementById(mySidenav).style.width = "100%";
     document.getElementById("page").style = "transition: 0.7s;filter:blur(2px);"
 }
 

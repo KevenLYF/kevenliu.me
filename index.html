@@ -10,12 +10,57 @@
 </head>
 <body>
 
+<div id="page">
+	<div id="content">
+		<div id="title">
+			<img src="file/portrait_circle.png" alt="photo" width="250" height="250">
+			
+			<h1>Keven Liu</h1>
+			<p1>McGill University<p1>
+			<p>Software Engineering Student</p>
+
+		</div>
+
+		<div id="social">
+			<a href="file/Resume.pdf" class="fa fa-file-text-o resume-hover" ></a>
+			<a href="https://www.linkedin.com/in/Yufei-Liu/" class="fa fa-linkedin linkedin-hover"></a>
+			<a href="https://github.com/KevenLYF" class="fa fa-github github-hover"></a>
+			<a href="mailto:kevenliu94@gmail.com" class="fa fa-envelope-o envelope-hover" ></a>
+		</div>
+
+	</div>
+
+	<div id="portfolio">
+		
+		<div id="project"> 
+			<h2>Projects 
+				<span class="fa fa-search"></span>
+				<input type="text" id="myInput" onkeyup="search()" placeholder="search...">
+			</h2>
+			<p class=project-content onclick="openNav('MLSidenav')">Machine Learning: Learn Music</p>
+			<p class=project-content  onclick="openNav('TASidenav')">Cross Platform TA Management System</p>
+			<p class=project-content  onclick="openNav('radioSidenav')">AM Reciever (trivial name: Radio)</p>
+			<p class=project-content  onclick="openNav('enigmaSidenav')">Enigma Encryption Machine</p>
+			<p class=project-content  onclick="openNav()">LEGO EV3 MindStorm Robot</p>
+		</div>
+	
+
+		<div id="interest">
+			<h2> Interest </h2>
+
+			<p> Music </p>
+			<p> Dota2 </p>
+
+		</div>
+	</div>
+
+</div>
 
 <div id="MLSidenav" class="sidenav">
 	<a href="javascript:void(0)" class="closebtn" onclick="closeNav('MLSidenav')">&times;</a>
 	<h1>Machine Learning: Learn Music</h1>
 	<p>In this project, our team built a neural network on myRIO logic board by using labVIEW. The main feature of this neural network is to learn music (recoginize tones).
-	By listening to the tones or chords, the program will tell which tone or chord is being played. 
+	By listening to the tones or chords, the program will tell which tone or chord is file:///C:/Users/35029/Desktop/kevenliu.me/file/portrait_circle.pngbeing played. 
 	<br>
 	</p>
 
@@ -58,17 +103,17 @@
 	<br>
 	We developed a TA management System in 3 platfroms: a Java program in PC, an Android app and a website which is written in HTML, CSS and PHP. The system enables students to apply for a TA position, or a professor to review all the TA applications.
 	</p>
-	<img src=file/TA1.png alt="android" width="184" height="334" class="android">
-	<img src=file/TA2.png alt="android" width="184" height="334">
-	<img src=file/TA3.png alt="android" width="184" height="334">
+	<img src=file/TA1.png alt="android" width="276" height="501" class="android">
+	<img src=file/TA2.png alt="android" width="276" height="501" class="android">
+	<img src=file/TA3.png alt="android" width="276" height="501" class="android">
 	<p>
 	<br>
 	The system was developed under standard software development process. First we used Umple modeling tool to model the system and then we used git to collaborate everyone's work. The development process was also tracked by using Gantt Chart. After the developemnt was done, we performed Unit Test and Integration Test by using respective frameworks (JUnit, PHP Unit, XDebug). The CI and building process was monitored by using Travis CI.
 	</p>
 
-     <img src=file/TA5.png alt="android" width="576" height="330" class="TAwebsite">
+     <img src=file/TA5.png alt="android" width="864" height="495" class="TAwebsite">
      <img src=file/TA6.png alt="android" class="TAwebsite">
-     <img src=file/TA4.png alt="android" width="576" height="330" class="TAwebsite">
+     <img src=file/TA4.png alt="android" width="864" height="495" class="TAwebsite">
 
 	<p> 	
 	If interesed, you can go to my github and check it out.
@@ -99,50 +144,12 @@
 	   	 	<br>
 	   	 		&nbsp;
  		</p>
-
-
  </div>
 
-<div id="page">
-	<div id="content">
-		<div id="title">
-			<img src="file/portrait_circle.png" alt="photo" width="250" height="250">
-			
-			<h1>Keven Liu</h1>
-			<p1>McGill University<p1>
-			<p>Software Engineering Student</p>
+ <div id="enigmaSidenav" class="sidenav"> 
+ 	<a href="javascript:void(0)" class="closebtn" onclick="closeNav('enigmaSidenav')">&times;</a>
 
-		</div>
-
-		<div id="social">
-			<a href="file/Resume.pdf" class="fa fa-file-text-o resume-hover" ></a>
-			<a href="https://www.linkedin.com/in/Yufei-Liu/" class="fa fa-linkedin linkedin-hover"></a>
-			<a href="https://github.com/KevenLYF" class="fa fa-github github-hover"></a>
-			<a href="mailto:kevenliu94@gmail.com" class="fa fa-envelope-o envelope-hover" ></a>
-		</div>
-
-	</div>
-
-	<div id="portfolio">
-		<div id="project"> 
-			<h2>Projects 
-				<span class="fa fa-search"></span>
-				<input type="text" id="myInput" onkeyup="search()" placeholder="search...">
-			</h2>
-			<p class=project-content onclick="openNav('MLSidenav')">Machine Learning: Learn Music</p>
-			<p class=project-content  onclick="openNav('TASidenav')">Cross Platform TA Management System</p>
-			<p class=project-content  onclick="openNav('radioSidenav')">AM Reciever (trivial name: Radio)</p>
-			<p class=project-content  onclick="openNav()">Enigma Encryption Machine</p>
-			<p class=project-content  onclick="openNav()">LEGO EV3 MindStorm Robot</p>
-		</div>
-	</div>
-
-	<div id="interest">
-		<h2> Interest </h2>
-
-	</div>
-
-</div>
+ </div>
 
 </body>
 </html>
