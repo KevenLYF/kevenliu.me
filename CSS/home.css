@@ -148,7 +148,7 @@ top: 2vh;
 position: relative;
 left: 35%;
 width: 300px;
-height: 600px;
+height: 500px;
 }
 
 
@@ -172,7 +172,7 @@ color:#d1d1d1;
 }
 
 #interest {
-top:65%;
+top:75%;
 position: absolute;
 font-family: "Trebuchet MS", Helvetica, sans-serif;
 font-weight: 100;
@@ -260,9 +260,20 @@ margin: 0px;
 }
 
 .myRIO {
+  width: 300px;
+  height: 300px;
 display: block;
 margin-left: auto;
 margin-right: auto;
+}
+
+.myRIOOverview {
+  width: 500px;
+  height: 200px;
+display: block;
+margin-left: auto;
+margin-right: auto;
+
 }
 
 #TASidenav {
@@ -390,7 +401,7 @@ text-decoration: underline;
   }
 
   #interest {
-    top: 40%;
+    top: 50%;
     left: 80px;
     text-align: center;
   }
@@ -402,4 +413,197 @@ text-decoration: underline;
   #myInput {
     width: 20%;
   }
+}
+
+
+/*  -----------------------------  Mobile ---------------------------------*/
+@media only screen and (max-device-width : 640px) {
+/* Styles */
+  #page {
+    max-width: 100%;
+    height: auto;
+    flex-direction: column;
+  }
+
+  #content {
+    order: 1;
+    left: 0;
+    top: 0;
+    margin:0 auto;
+    width: 900px;
+   height: 1050px;
+   position: relative;
+   left: 27%;
+  }
+
+  #social {
+    left: 12%;
+  }
+
+  #title {
+    position: absolute;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    font-weight: 100;
+    font-size: 45px;
+    color: #ffffff;
+    text-align: center; 
+  }
+
+  #title h1 {
+   line-height: 30px;
+  }
+
+  #portfolio {
+    order: 2;
+    left: 0;
+    margin:0 auto;
+    width: 900px;
+    height: 1200px;
+    font-size: 45px;
+  }
+
+  #project {
+    left: 25%;
+    top: 0;
+    text-align: center;
+
+  }
+
+  .project-content {
+    font-size: 45px;
+  }
+
+  #interest {
+    top: 70%;
+    left: 45%;
+    text-align: center;
+  }
+
+  #title {
+    top:0;
+  }
+
+  #title img {
+    width: 600px;
+    height: 600px;
+  }
+
+  #myInput {
+    width: 20%;
+  }
+
+  .fa {
+  padding: 9px;
+  width: 60px;
+  text-decoration: none;
+  margin: 15px 6px;
+} 
+
+#project .fa-search {
+  position: absolute;
+  color: #777777;
+  font-size: 45px;
+}
+
+#social .fa-linkedin {
+  position: relative;
+  bottom: 4.5px;
+  border-radius: 20%;
+  font-size: 57px;
+  background: #007bb5;
+  color: white;
+}
+
+#social .fa-github {
+  font-size: 75px;
+  color: #d6b1d2;
+}
+
+#social .fa-envelope-o {
+  font-size: 69px;
+  color: white;
+}
+
+#social .fa-file-text-o {
+  font-size: 66px;
+  color: white;
+  padding-right: 15px;
+}
+
+#myInput {
+  width: 40%;
+  font-size: 40px;
+  padding: 18px 36px 12px 75px;
+  border: none;
+  background-color: transparent;
+  border-bottom: 3px solid #8e8e8e;
+}
+
+#MLSidenav h1 {
+font-size: 90px;
+}
+
+#MLSidenav p {
+font-size: 45px;
+}
+
+#MLSidenav .sidenav {
+  width: 600px;
+  height: 600px;
+}
+
+#MLSidenav .report {
+font-size: 45px;
+}
+
+#TASidenav .mfLink {
+  font-size: 36px;
+}
+
+#TASidenav .note {
+font-size: 36px;
+}
+
+#TASidenav h1 {
+font-size: 90px;
+}
+
+#TASidenav p {
+font-size: 45px;
+}
+
+#radioSidenav h1 {
+font-size: 90px;
+}
+
+#radioSidenav p {
+font-size: 45px;
+}
+
+#radioSidenav .report {
+font-size: 45px;
+}
+
+#radioSidenav img {
+  width: 856px;
+  height: 642px;
+}
+
+.sidenav .closebtn {
+  font-size: 108px;
+}
+
+.myRIO {
+  height: 600px;
+  width: 600px;
+}
+
+.myRIOOverview {
+display: block;
+margin-left: auto;
+margin-right: auto;
+width: 800px;
+hyphens: 350px;
+}
+
 }
