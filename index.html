@@ -6,9 +6,16 @@
 <title>Keven Liu</title>
 <link rel="stylesheet" type="text/css" href="css/home.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="js/jquery-3.3.1.min.js"></script>
 <script src="js/main.js"></script>
 </head>
 <body>
+
+<canvas class="container" id="container" role="main"></canvas>
+
+<div class="blur blurTop"><canvas class="canvas"id="blurCanvasTop"></canvas></div>
+<div class="blur blurBottom"><canvas width="1000px" height="1000px" class="canvas" id="blurCanvasBottom"></canvas></div>
+
 
 <div id="page">
 	<div id="content">
@@ -48,8 +55,8 @@
 		<div id="interest">
 			<h2> Interest </h2>
 
-			<p> Music </p>
-			<p> Dota2 </p>
+			<p class="interestList"> Music </p>
+			<p class="interestList"> Dota2 </p>
 
 		</div>
 	</div>
@@ -148,8 +155,39 @@
 
  <div id="enigmaSidenav" class="sidenav"> 
  	<a href="javascript:void(0)" class="closebtn" onclick="closeNav('enigmaSidenav')">&times;</a>
+ 	<h1>Enigma Encryption Machine</h1>
 
+ 		<p> Yes, it is "the" Enigma Encryption Machine that was being invented by German Army during the World War II. What we build here is an electronic version which is being implemented on a FPGA board. To give you a little context, an Enigma Machine takes your input (letters) and encrypts it based on your encryption settings. As a reciever, simply adjust your encryption settings to match the sender's and enter the encrypted letters, you will get the intelligence information.
+ 		<br>
+ 		</p>
+ 		 		<img src="file/enigma3.jpg" alt="Enigma" class="enigma1">
+ 		<p>
+ 		<br>
+ 		The famous movie "The Imitation Game" which is acted by Benedict Cumberbatch, described a story of how Turing cracked the Enigma machine by using the "Computer" he invented. At the end of the project, I was really impressed by the wisdom of human mind power at that time.
+ 		<br>
+ 		Wanna try it out? <a href="http://enigmaco.de/enigma/enigma.html" class="enigmaLink">Click here</a> 
+ 		<br>
+ 		<br>
+ 		</p>
+ 			<img src="file/Enigma.jpg" alt="Enigma" class="enigmaFPGA">
+ 		<p class="FPGA"> Enigma implementation on a FPGA board <br><br></p>
+
+ 			<img src="file/enigma2.png" alt="Enigma" class="enigma" width="1145" height="398">
+
+ 		<p class="FPGA">Block diagram of our Enigma design<br><br></p>
+
+
+ 		<p> If interesed, you can download our report.
+ 			<a href="file/Enigma_report.pdf" class="report">Download report</a> 
+	   		<br>
+	   	 	<br>
+	   	 	<br>
+	   	 	<br>
+	   	 		&nbsp;
+ 		</p>
  </div>
+
+ 
 
 </body>
 </html>
