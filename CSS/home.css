@@ -97,7 +97,7 @@ line-height: 10px;
 
 #project .fa-search {
   position: absolute;
-  color: #777777;
+  color: #bababa;
   font-size: 15px;
 }
 
@@ -260,11 +260,15 @@ font-size: 36px;
   padding: 6px 12px 4px 25px;
   border: none;
   background-color: transparent;
-  border-bottom: 1px solid #8e8e8e;
+  border-bottom: 1px solid #bababa;
+}
+
+#myInput::placeholder {
+  color: #bababa;
 }
 
 input#myInput, textarea{
-  color: #8e8e8e;
+  color: #bababa;
 }
 
 #MLSidenav {
@@ -278,7 +282,7 @@ height: auto;
 }
 
 #MLSidenav h1 {
-color: #d1d1d1;
+color: white;
 text-align: center;
 }
 
@@ -331,7 +335,7 @@ height: auto;
 }
 
 #TASidenav h1 {
-color: #d1d1d1;
+color: white;
 text-align: center;
 font-family: "Trebuchet MS", Helvetica, sans-serif;
 font-weight: 100;
@@ -378,13 +382,42 @@ font-family: "Trebuchet MS", Helvetica, sans-serif;
 font-weight: 100;
 }
 
+#robotSidenav {
+text-align:center;
+}
+
+#robotSidenav video{
+display:block;
+margin-left: auto;
+margin-right: auto;
+max-width: 100%;
+height: auto;
+}
+
+#robotSidenav h1 {
+color: white;
+text-align: center;
+font-family: "Trebuchet MS", Helvetica, sans-serif;
+font-weight: 100;
+}
+
+#robotSidenav p {
+font-size: 15px;
+color: #d1d1d1;
+text-align: justify;
+padding-left: 10%;
+padding-right: 10%;
+font-family: "Trebuchet MS", Helvetica, sans-serif;
+font-weight: 100;
+}
+
 #radioSidenav img {
 max-width: 100%;
 height: auto;
 }
 
 #radioSidenav h1 {
-color: #d1d1d1;
+color: white;
 text-align: center;
 font-family: "Trebuchet MS", Helvetica, sans-serif;
 font-weight: 100;
@@ -433,7 +466,7 @@ height: 270px;
 }
 
 #enigmaSidenav h1 {
-color: #d1d1d1;
+color: white;
 text-align: center;
 font-family: "Trebuchet MS", Helvetica, sans-serif;
 font-weight: 100;
@@ -476,6 +509,96 @@ text-decoration: underline;
   color:#92bbfc;
 }
 
+#interestSidenav .music{
+color: white;
+text-align: left;
+font-family: "Trebuchet MS", Helvetica, sans-serif;
+font-weight: 100;
+padding-left: 10%;
+}
+
+
+#interestSidenav h1 a{
+color: white;
+text-align: left;
+font-family: "Trebuchet MS", Helvetica, sans-serif;
+font-weight: 100;
+padding-left: 10%;
+text-decoration: underline;
+}
+
+#interestSidenav a.dotaTitle:visited {
+  color:#92bbfc;
+}
+
+#interestSidenav p {
+font-size: 15px;
+color: #d1d1d1;
+text-align: justify;
+padding-left: 10%;
+padding-right: 10%;
+font-family: "Trebuchet MS", Helvetica, sans-serif;
+font-weight: 100;
+}
+
+#interestSidenav p a{
+font-size: 15px;
+color: #d1d1d1;
+font-family: "Trebuchet MS", Helvetica, sans-serif;
+font-weight: 100;
+text-decoration: underline;
+display:inline;
+}
+
+#interestSidenav img {
+max-width: 100%;
+height: auto;
+display:inline-block;
+margin-left: auto;
+margin-right: auto;
+padding-left: 10%;
+}
+
+#interestSidenav video {
+max-width: 100%;
+height: auto;
+display:block;
+margin-left: auto;
+margin-right: auto;
+}
+
+#certifSidenav h1{
+color: white;
+text-align: left;
+font-family: "Trebuchet MS", Helvetica, sans-serif;
+font-weight: 100;
+padding-left: 10%;
+}
+
+#certifSidenav p {
+font-size: 15px;
+color: #d1d1d1;
+text-align: justify;
+padding-left: 10%;
+padding-right: 10%;
+font-family: "Trebuchet MS", Helvetica, sans-serif;
+font-weight: 100;
+}
+
+#certifSidenav p a{
+font-size: 15px;
+color: #d1d1d1;
+font-family: "Trebuchet MS", Helvetica, sans-serif;
+font-weight: 100;
+text-decoration: underline;
+display:inline;
+}
+
+#certifSidenav a#french:visited {
+  color:#92bbfc;
+}
+
+
 
 /*-----------------------------  Browser ---------------------------------
 -----------------------------  Browser ---------------------------------
@@ -494,11 +617,11 @@ text-decoration: underline;
 
 
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 720px) {
 
 html,body {
 
-overflow: inherit;
+overflow: auto;
 
 }
 
@@ -529,7 +652,7 @@ overflow: inherit;
 
   #interest {
     top: 50%;
-    left: 80px;
+    left: 70px;
     text-align: center;
   }
 
@@ -699,11 +822,6 @@ font-size: 90px;
 font-size: 45px;
 }
 
-#MLSidenav .sidenav {
-  width: 600px;
-  height: 600px;
-}
-
 #MLSidenav .report {
 font-size: 45px;
 }
@@ -724,7 +842,15 @@ font-size: 90px;
 font-size: 45px;
 }
 
-#radioSidenav h1 {
+#TASidenav h1 {
+font-size: 90px;
+}
+
+#robotSidenav p {
+font-size: 45px;
+}
+
+#robotSidenav h1 {
 font-size: 90px;
 }
 
@@ -783,6 +909,41 @@ height: 540px;
 .enigmaFPGA{
 width: 794px;
 height: 530px;
+}
+
+.interestList {
+font-size: 45px; 
+
+}
+
+#interestSidenav h1 {
+font-size: 90px;
+}
+
+#interestSidenav p {
+font-size: 45px;
+
+}
+
+#interestSidenav .dotaTitle{
+font-size: 45px;
+}
+
+#interestSidenav p a{
+font-size: 45px;
+}
+
+#certifSidenav h1{
+font-size: 90px;
+}
+
+#certifSidenav p {
+font-size: 45px;
+}
+
+#certifSidenav p a{
+font-size: 45px;
+
 }
 
 }

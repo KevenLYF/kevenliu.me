@@ -52,7 +52,7 @@ function particle(){
   };
   this.vx = 0.3 * Math.random();
   this.vy = 0.3 * Math.random();
-  this.radius = randomInt(2,3);
+  this.radius = randomInt(2,4);
   this.float = function(){
     this.x += this.vx * this.direction.x;
     this.y += this.vy * this.direction.y;

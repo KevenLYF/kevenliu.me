@@ -3,6 +3,8 @@
 <html>
 <head >
 
+<meta charset="UTF-8">
+
 <title>Keven Liu</title>
 <link rel="stylesheet" type="text/css" href="css/home.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -46,17 +48,17 @@
 			</h2>
 			<p class=project-content onclick="openNav('MLSidenav')">Machine Learning: Learn Music</p>
 			<p class=project-content  onclick="openNav('TASidenav')">Cross Platform TA Management System</p>
+			<p class=project-content  onclick="openNav('robotSidenav')">LEGO EV3 MindStorm Robot</p>
 			<p class=project-content  onclick="openNav('radioSidenav')">AM Reciever (trivial name: Radio)</p>
 			<p class=project-content  onclick="openNav('enigmaSidenav')">Enigma Encryption Machine</p>
-			<p class=project-content  onclick="openNav()">LEGO EV3 MindStorm Robot</p>
 		</div>
 	
 
 		<div id="interest">
-			<h2> Interest </h2>
+			<h2> About Me </h2>
 
-			<p class="interestList"> Music </p>
-			<p class="interestList"> Dota2 </p>
+			<p class="interestList" onclick="openNav('interestSidenav')"> Interests </p>
+			<p class="interestList" onclick="openNav('certifSidenav')"> Certificates</p>
 
 		</div>
 	</div>
@@ -187,6 +189,131 @@
  		</p>
  </div>
 
+ <div id="robotSidenav" class="sidenav"> 
+ 	<a href="javascript:void(0)" class="closebtn" onclick="closeNav('robotSidenav')">&times;</a>
+ 	<h1>LEGO EV3 Mindstorm Robot</h1>
+ 	<p>
+ 		The robot has five rotors, two ultrasonic sensors, one light senser and color sensor. It was programmed in Java to perform localization, navigation, searching and capture. It was able to pick up a target object from a maze which contains differect obstacles.
+ 		<br>
+ 		<br>
+ 		Unfortunately, this is the only viedo I can find.
+ 		<br>
+ 		<br>
+	 		<video width="960" height="540" controls>
+			  <source src="file/robot.mp4" type="video/mp4">
+			  Your browser does not support the video tag.
+			</video>
+			
+		<br>
+		<br>
+		<br>
+		<br>
+		&nbsp;
+ 	</p>
+ </div> 
+
+ <div id="interestSidenav" class="sidenav">
+	<a href="javascript:void(0)" class="closebtn" onclick="closeNav('interestSidenav')">&times;</a>
+
+		<h1 class="music"> Piano </h1>
+		<p>
+		I started learning the piano since I was 7 years old and I was trained by several professional piano teachers. I got my 7th level Pinao Certifate when I was 15 years old (Issued by Shanghai Conservatory of Music).
+		<br>
+		<br>
+			<audio controls>
+			<source src="file/douqin.mp3" type="audio/mpeg">
+			Your browser does not support the audio element.
+			</audio> 
+			<br>
+			(Song: Chopin Valse Op 64. No 2. (Revised) )
+			<br>
+			<br>
+			<audio controls>
+			<source src="file/douqin_jazz.mp3" type="audio/mpeg">
+			Your browser does not support the audio element.
+			</audio> 
+		</p>
+
+		<br>
+
+		<h1 class="music" > Guitar </h1>
+		<p>I started playing guitar since High School and I mainly play folk. I learned guitar by myself for my own inteterest.
+			  	<br>
+			 	<br>
+			 	(Song: Take me home, country road.)
+			 	<br>
+			 	<br>
+			  <video width="960" height="540" controls>
+				  <source src="file/country_road.mp4" type="video/mp4">
+				  Your browser does not support the video tag.
+				  <br>
+				  <br>
+			  </video>		
+			  	<br>
+			 	<br>
+			  	<br>
+			 	<br>
+			 	(Song: 情非得已 (Qing Fei De Yi) )
+			  	<br>
+			 	<br>
+			  <video width="960" height="540" controls>
+				  <source src="file/qfdy.mp4" type="video/mp4">
+				  Your browser does not support the video tag.
+			  </video>
+			  <br>
+		</p>
+
+		<br>	  
+
+
+		<h1><a href="https://en.wikipedia.org/wiki/Dota_2" class="dotaTitle">Dota 2 </a> </h1>
+		<p>
+		Dota 2 is a multiplayer strategy video game which has a widespread and active competitive scene, with teams from across the world playing professionally in various leagues and tournaments. The total prize tool for all of the Dota 2 tournaments combined since 2011 has exceeded 100 million dollars.
+
+		<br>
+		<br>
+		I was the captain of McGill Dota 2 team (division 2, 2013 - 2014), and I led my team joined the <a href="https://cstarleague.com/" class="dotaTitle"> Collegiate Starleague</a> which involves more than 100 university teams in NA. Our match record was 18-1 and we ranked top 3.
+
+		<br>
+		<br>
+		To prove I'm not bragging, I've attached some screenshots of our match status.
+		<br>
+		<br>
+		<img src="file/dota2.jpg" alt="Dota2" class="dota2" width="320" height="426">
+		<img src="file/dota1.jpg" alt="Dota2" class="dota2" width="568" height="426">
+		<br>
+		<br>
+		<br>
+		<br>
+		&nbsp;
+
+		</p>
+
+</div>
+
+ <div id="certifSidenav" class="sidenav">
+	<a href="javascript:void(0)" class="closebtn" onclick="closeNav('certifSidenav')">&times;</a>
+
+		<h1> Piano </h1>
+
+		<p> The 7th level Piano Certificate issued by Shanghai Conservatory of Music
+			<br>
+			<br>
+			(I might have lost my certificate, I'll upload it once I found it.)
+		</p>
+
+		<br>
+		<br>
+		<br>
+
+		<h1>French</h1>
+		<p> French B2 level certificate issued by Commission Scolaire Marguerite-Bourgeoys (Montreal) 
+		<br>
+		<br>
+		<a href="file/french.pdf" id="french">View Certificate</a>
+		</p>
+
+</div>
  
 
 </body>
